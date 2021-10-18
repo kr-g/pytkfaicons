@@ -1,15 +1,17 @@
 import tkinter as tk
 
-from pytkfaicons.conv import build, convert_all, copy_meta
+
+if False:
+
+    from pytkfaicons.conv import build, get_repo, convert_all, copy_meta
+
+    # build(opts="-c", callb=print)
+    # convert_all()
+    # copy_meta()
 
 
-# build(opts="-c", callb=print)
-
-
-from pytkfaicons.icons import read_icons, get_icon_image, tk_image_loader, get_tk_icon
-from pytkfaicons.icons import get_scaled_tk_icon
-
-read_icons()
+from pytkfaicons.conv import get_scaled_tk_icon
+from pytkfaicons.icons import get_icon_image, tk_image_loader, get_tk_icon
 
 
 root = tk.Tk()
