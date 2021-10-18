@@ -1,6 +1,9 @@
 import os
 import json
 
+from wand.image import Image as WandImage
+from wand.color import Color
+
 import tkinter as tk
 from PIL import Image
 
@@ -67,3 +70,38 @@ def tk_image_loader(fnam):
 
 def get_tk_icon(name, style):
     return get_icon_image(name, style, loader=tk_image_loader)
+
+
+def get_svg(name, style):
+    global icons
+    if not name in icons:
+        raise Exception("not found", name)
+    if not "svg_" + style in icons[name]:
+        raise Exception("not found", name, style)
+    svg = icons[name]["svg_" + style]
+    return svg
+
+
+def get_svg_image(svg):
+    img = WandImage(blob=svg.encode())
+    return img
+
+
+def get_svg_trans_resize(svgimg, height):
+    img = svgimg.clone()
+    img.transparent_color(Color("white"), 0.0)
+    img.transform(resize=f"x{height}")
+    return img
+
+
+def get_tk_image(svgimg, format="png"):
+    img = tk.PhotoImage(data=svgimg.make_blob(format))
+    return img
+
+
+def get_scaled_icon(name, style, height=32, format="png"):
+    svg = get_svg(name, style)
+    svgimg = get_svg_image(svg)
+    tr_svg = get_svg_trans_resize(svgimg, height)
+    tk_img = get_tk_image(tr_svg, format=format)
+    return tk_img

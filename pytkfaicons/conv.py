@@ -123,6 +123,10 @@ def copy_meta():
     with open(icons_src) as f:
         icons = json.loads(f.read())
     for key, val in icons.items():
+
+        for st in val["styles"]:
+            val["svg_" + st] = val["svg"][st]["raw"]
+
         for tag in [
             "svg",
             "unicode",
