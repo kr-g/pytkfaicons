@@ -35,7 +35,7 @@ in case your code breaks between two versions check
 information first before creating a ticket / issue on github. thanks.
 
 
-# note on self-build a local package
+# note on self-build a local package or scalable icons
 
 - for downloading content from github with 
 [`pygitrab`](https://github.com/kr-g/pygitgrab) 
