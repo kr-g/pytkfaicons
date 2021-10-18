@@ -41,7 +41,7 @@ a credits file is required.
 
 # installation
     
-      
+      python3 -m pip install pytkfaicons
 
 
 # license
