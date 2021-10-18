@@ -10,6 +10,7 @@ from wand.color import Color
 
 from .const import ICONS, S_BRANDS, S_REGULAR, S_SOLID, FORMAT, HEIGHT
 
+height = HEIGHT
 
 download_temp = os.path.abspath("downloads")
 os.makedirs(download_temp, exist_ok=True)
@@ -88,7 +89,7 @@ def convert(src, dest=None, output=None):
 
     img.transparent_color(Color("white"), 0.0)
     img.transform(
-        resize=f"x{HEIGHT}",
+        resize=f"x{height}",
     )
 
     cimg = img.convert(output)

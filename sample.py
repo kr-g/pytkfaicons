@@ -1,6 +1,6 @@
 import tkinter as tk
 
-from pytkfaicons.conv import build
+from pytkfaicons.conv import build, convert_all
 
 
 # build(opts="-c", callb=print)
