@@ -2,7 +2,8 @@ import tkinter as tk
 
 from pytkfaicons.conv import build
 
-build(opts="-c", callb=print)
+
+# build(opts="-c", callb=print)
 
 
 from pytkfaicons.icons import read_icons, get_icon_image, tk_image_loader, get_tk_icon
