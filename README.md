@@ -50,9 +50,7 @@ a credits file is required.
 
 # license
 
-pytkfaicons : GNU AFFERO GENERAL PUBLIC LICENSE version 3 and later
-
-fontawesome : refer to https://fontawesome.com/license/free
+refer to https://github.com/kr-g/pytkfaicons/blob/main/LICENSE
 
 
 
