@@ -2,7 +2,7 @@
 
 # pytkfontawesome
 
-fontawesome svg icons converted to png.
+fontawesome svg icons converted to png 
 
 
 # what's new ?
@@ -31,15 +31,17 @@ in case your code breaks between two versions check
 information first before creating a ticket / issue on github. thanks.
 
 
-# limitations
+# note on self-build a local package
 
-for downloading content from github with pygitrab a credit file is required.
+for downloading content from github with 
+[`pygitrab`](https://github.com/kr-g/pygitgrab) 
+a credits file is required.
 
 
 
 # installation
     
-not yet released  
+      
 
 
 # license
