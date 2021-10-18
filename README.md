@@ -33,10 +33,10 @@ information first before creating a ticket / issue on github. thanks.
 
 # note on self-build a local package
 
-for downloading content from github with 
+- for downloading content from github with 
 [`pygitrab`](https://github.com/kr-g/pygitgrab) 
 a credits file is required.
-
+- imagemagick is required to convert with [`wand`](https://github.com/emcconville/wand)
 
 
 # installation
