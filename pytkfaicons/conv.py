@@ -147,6 +147,6 @@ def copy_meta():
 
 
 def build(reftag=None, opts=None, callb=None):
-    #get_repo(reftag, opts=opts, callb=callb)
+    get_repo(reftag, opts=opts, callb=callb)
     copy_meta()
     convert_all()
