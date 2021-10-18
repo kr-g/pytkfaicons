@@ -72,6 +72,9 @@ def get_tk_icon(name, style):
     return get_icon_image(name, style, loader=tk_image_loader)
 
 
+# svg direct support
+
+
 def get_svg(name, style):
     global icons
     if not name in icons:
@@ -99,7 +102,7 @@ def get_tk_image(svgimg, format="png"):
     return img
 
 
-def get_scaled_icon(name, style, height=32, format="png"):
+def get_scaled_tk_icon(name, style, height=32, format="png"):
     svg = get_svg(name, style)
     svgimg = get_svg_image(svg)
     tr_svg = get_svg_trans_resize(svgimg, height)

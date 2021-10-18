@@ -4,6 +4,10 @@
 
 fontawesome svg icons converted to png 
 
+includes:
+- pre-calculated 32px height icons (fast)
+- method for creating scalable icons from svg source (slow)
+
 
 # what's new ?
 
