@@ -11,25 +11,17 @@ from wand.color import Color
 from .const import ICONS, S_BRANDS, S_REGULAR, S_SOLID, FORMAT, HEIGHT
 
 
-download_temp = os.path.join(tempfile.gettempdir(), "fa-downloads")
-
-download_temp = "downloads"
-
-download_temp = os.path.expandvars(download_temp)
-download_temp = os.path.expanduser(download_temp)
-download_temp = os.path.abspath(download_temp)
-
+download_temp = os.path.abspath("downloads")
 os.makedirs(download_temp, exist_ok=True)
 
 curd = os.path.dirname(os.path.abspath(__file__))
 
 repo_url = "https://github.com/FortAwesome/Font-Awesome"
 
+
 def mk_temp_pygg(reftag):
-    
-    
-    pygg = (
-        """
+
+    pygg = """
         [fontawesome_github]
         url="%s"
 
@@ -40,8 +32,9 @@ def mk_temp_pygg(reftag):
         solid= "svgs/solid/*.svg", "solid"
 
         meta = "metadata/*.json", "meta"
-    """
-        % (repo_url,reftag)
+    """ % (
+        repo_url,
+        reftag,
     )
     fpygg = os.path.join(download_temp, "fa.pygg")
     with open(fpygg, "w") as f:
@@ -148,5 +141,5 @@ def copy_meta():
 
 def build(reftag=None, opts=None, callb=None):
     get_repo(reftag, opts=opts, callb=callb)
-    copy_meta()
     convert_all()
+    copy_meta()

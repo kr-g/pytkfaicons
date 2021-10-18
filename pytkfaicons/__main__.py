@@ -1,3 +1,3 @@
-from .conv import build
+from .main import main_func
 
-build()
+main_func()
