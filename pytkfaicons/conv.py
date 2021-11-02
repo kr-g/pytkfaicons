@@ -139,7 +139,6 @@ def copy_meta():
 
         for tag in [
             "svg",
-            "unicode",
             "label",
             "voted",
             "changes",
