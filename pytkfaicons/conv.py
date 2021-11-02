@@ -12,6 +12,7 @@ from wand.color import Color
 
 from . import (
     _thisdir,
+    get_meta,
     get_icons,
     ICONS,
     FONTS,

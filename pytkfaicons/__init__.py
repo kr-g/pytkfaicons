@@ -31,3 +31,11 @@ def read_icons():
     with open(icons_src) as f:
         global _icons
         _icons = json.loads(f.read())
+
+
+def get_meta(name):
+    icons = get_icons()
+    ic = icons.get(name, None)
+    if ic is None:
+        raise Exception("not found", name)
+    return ic

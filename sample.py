@@ -1,4 +1,5 @@
 import tkinter as tk
+from PIL import Image, ImageDraw
 
 
 if False:
@@ -14,8 +15,10 @@ if False:
     # copy_fonts()
 
 
-from pytkfaicons.conv import get_scaled_tk_icon, get_colored_scaled_tk_icon
-from pytkfaicons.icons import get_icon_image, tk_image_loader, get_tk_icon
+from pytkfaicons.conv import get_meta, get_scaled_tk_icon, get_colored_scaled_tk_icon
+from pytkfaicons.icons import get_icon, get_icon_image, tk_image_loader, get_tk_icon
+
+from pytkfaicons.fonts import get_font
 
 
 root = tk.Tk()
@@ -78,5 +81,15 @@ tk.Button(frame2, justify=tk.LEFT, padx=10, image=bahai).pack(side="left")
 tk.Button(frame2, justify=tk.LEFT, padx=10, image=bars).pack(side="left")
 
 frame2.pack()
+
+
+f_brands = get_font("brands", 14)
+print(f_brands.getname())
+f_solid = get_font("solid", 14)
+print(f_solid.getname())
+f_regular = get_font("regular", 14)
+print(f_regular.getname())
+
+
 
 root.mainloop()
