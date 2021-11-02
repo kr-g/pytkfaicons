@@ -90,6 +90,7 @@ print(f_solid.getname())
 f_regular = get_font("regular", 14)
 print(f_regular.getname())
 
-
+baby = get_meta("baby")
+print(type(baby), baby["unicode"], baby)
 
 root.mainloop()
