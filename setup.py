@@ -41,8 +41,9 @@ setuptools.setup(
     url=f"https://github.com/kr-g/{projectname}",
     packages=setuptools.find_packages(exclude=[]),
     include_package_data=True,
-    keywords="tkinterfontawesome icons",
+    keywords="tkinter fontawesome icons",
     install_requires=[
+        "Pillow",
         "pygitgrab",
         "wand",
     ],
@@ -54,4 +55,5 @@ setuptools.setup(
         "Intended Audience :: Developers",
         "Programming Language :: Python :: 3",
     ],
+    python_requires=">=3.8",
 )
