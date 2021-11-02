@@ -167,6 +167,7 @@ def build(reftag=None, opts=None, callb=None):
     get_repo(reftag, opts=opts, callb=callb)
     convert_all()
     copy_meta()
+    copy_fonts()
 
 
 # svg direct support

@@ -7,10 +7,10 @@ if False:
     from pytkfaicons.conv import build, get_repo, convert_all, copy_meta, copy_fonts
 
     # build(opts="-c", callb=print) # use custom credit file
-    build(callb=print)  # use global .pygg_credits file
+    # build(callb=print)  # use global .pygg_credits file
 
-    convert_all()
-    copy_meta()
+    # convert_all()
+    # copy_meta()
     # copy_fonts()
 
 
