@@ -35,7 +35,7 @@ def mk_temp_pygg(reftag):
         #regular= "svgs/regular/*.svg", "regular"
         #solid= "svgs/solid/*.svg", "solid"
 
-        meta = "metadata/icons.json", "meta"
+        meta = "metadata/icons.json", "meta/icons.json"
     """ % (
         repo_url,
         reftag,

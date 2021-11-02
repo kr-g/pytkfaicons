@@ -2,12 +2,15 @@ import tkinter as tk
 
 
 if False:
+    # set to True to build all icons
 
     from pytkfaicons.conv import build, get_repo, convert_all, copy_meta
 
-    # build(opts="-c", callb=print)
-    # convert_all()
-    # copy_meta()
+    # build(opts="-c", callb=print) # use custom credit file
+    build(callb=print)  # use global .pygg_credits file
+
+    convert_all()
+    copy_meta()
 
 
 from pytkfaicons.conv import get_scaled_tk_icon, get_colored_scaled_tk_icon
