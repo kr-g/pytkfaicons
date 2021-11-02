@@ -178,14 +178,16 @@ def mod_transparent_img(img):
 
 
 def mod_resized_img(img, height):
-    img.transform(resize=f"x{height}")
+    if height:
+        img.transform(resize=f"x{height}")
 
 
 def mod_color(img, color):
     """changes black to new color"""
-    if type(color) == str:
-        color = Color(color)
-    img.opaque_paint(target=Color("black"), fill=color)
+    if color:
+        if type(color) == str:
+            color = Color(color)
+        img.opaque_paint(target=Color("black"), fill=color)
 
 
 # pre-defined helper
@@ -215,3 +217,17 @@ def get_scaled_tk_icon(name, style, height=32, format="png"):
     tr_svg = get_scaled_icon(name, style, height)
     tk_img = get_tk_image(tr_svg, format=format)
     return tk_img
+
+
+def get_colored_scaled_tk_icon(
+    name, style, height=32, color=None, invert=False, format="png"
+):
+    svg = get_svg(name, style)
+    img = get_svg_image(svg)
+    if invert:
+        mod_invert_img(img)
+    mod_color(img, color)
+    mod_transparent_img(img)
+    mod_resized_img(img, height)
+    img_tk = get_tk_image(img, format=format)
+    return img_tk

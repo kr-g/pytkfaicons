@@ -10,7 +10,7 @@ if False:
     # copy_meta()
 
 
-from pytkfaicons.conv import get_scaled_tk_icon
+from pytkfaicons.conv import get_scaled_tk_icon, get_colored_scaled_tk_icon
 from pytkfaicons.icons import get_icon_image, tk_image_loader, get_tk_icon
 
 
@@ -20,16 +20,16 @@ frame1 = tk.Frame(root)
 tk.Label(frame1, text="on the fly resized (slow)").pack(side="left")
 
 # resize on the fly (slow)
-img0 = get_scaled_tk_icon("arrow-left", "solid", 64)
+img0 = get_colored_scaled_tk_icon("arrow-left", "solid", 64, "green")
 tk.Button(frame1, justify=tk.LEFT, padx=10, image=img0).pack(side="left")
 
-img1 = get_scaled_tk_icon("arrow-right", "solid", 48)
+img1 = get_colored_scaled_tk_icon("arrow-right", "solid", 48, "green", invert=True)
 tk.Button(frame1, justify=tk.LEFT, padx=10, image=img1).pack(side="left")
 
-img2 = get_scaled_tk_icon("asterisk", "solid", 32)
+img2 = get_colored_scaled_tk_icon("asterisk", "solid", 32, "blue", invert=True)
 tk.Button(frame1, justify=tk.LEFT, padx=10, image=img2).pack(side="left")
 
-img3 = get_scaled_tk_icon("barcode", "solid", 24)
+img3 = get_colored_scaled_tk_icon("barcode", "solid", 24, "blue")
 tk.Button(frame1, justify=tk.LEFT, padx=10, image=img3).pack(side="left")
 
 img4 = get_scaled_tk_icon("baby", "solid", 12)
