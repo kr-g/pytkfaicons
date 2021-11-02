@@ -166,21 +166,52 @@ def get_svg_image(svg):
     return img
 
 
+# wand image modifiers
+
+
+def mod_invert_img(img):
+    img.negate()
+
+
+def mod_transparent_img(img):
+    img.transparent_color(Color("white"), 0.0)
+
+
+def mod_resized_img(img, height):
+    img.transform(resize=f"x{height}")
+
+
+def mod_color(img, color):
+    """changes black to new color"""
+    if type(color) == str:
+        color = Color(color)
+    img.opaque_paint(target=Color("black"), fill=color)
+
+
+# pre-defined helper
+
+
 def get_svg_trans_resize(svgimg, height):
     img = svgimg.clone()
-    img.transparent_color(Color("white"), 0.0)
-    img.transform(resize=f"x{height}")
+    mod_transparent_img(img)
+    mod_resized_img(img, height)
     return img
 
 
 def get_tk_image(svgimg, format="png"):
+    """convert image"""
     img = tk.PhotoImage(data=svgimg.make_blob(format))
     return img
 
 
-def get_scaled_tk_icon(name, style, height=32, format="png"):
+def get_scaled_icon(name, style, height=32):
     svg = get_svg(name, style)
     svgimg = get_svg_image(svg)
     tr_svg = get_svg_trans_resize(svgimg, height)
+    return tr_svg
+
+
+def get_scaled_tk_icon(name, style, height=32, format="png"):
+    tr_svg = get_scaled_icon(name, style, height)
     tk_img = get_tk_image(tr_svg, format=format)
     return tk_img
