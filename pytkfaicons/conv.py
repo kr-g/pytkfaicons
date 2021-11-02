@@ -46,7 +46,7 @@ def mk_temp_pygg(reftag):
         #solid= "svgs/solid/*.svg", "solid"
 
         meta = "metadata/icons.json", "meta/icons.json"
-        otf_fonts = "otfs/*.otf", "fonts/"
+        #otf_fonts = "otfs/*.otf", "fonts/"
         ttf_fonts = "webfonts/*.ttf", "fonts/"
     """ % (
         repo_url,
