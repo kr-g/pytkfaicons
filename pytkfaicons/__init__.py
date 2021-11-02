@@ -2,6 +2,7 @@ import os
 import json
 
 ICONS = "icons"
+FONTS = "fonts"
 
 S_BRANDS = "brands"
 S_REGULAR = "regular"

@@ -10,7 +10,17 @@ import tkinter as tk
 from wand.image import Image
 from wand.color import Color
 
-from . import _thisdir, get_icons, ICONS, S_BRANDS, S_REGULAR, S_SOLID, FORMAT, HEIGHT
+from . import (
+    _thisdir,
+    get_icons,
+    ICONS,
+    FONTS,
+    S_BRANDS,
+    S_REGULAR,
+    S_SOLID,
+    FORMAT,
+    HEIGHT,
+)
 
 
 height = HEIGHT
@@ -36,6 +46,8 @@ def mk_temp_pygg(reftag):
         #solid= "svgs/solid/*.svg", "solid"
 
         meta = "metadata/icons.json", "meta/icons.json"
+        otf_fonts = "otfs/*.otf", "fonts/"
+        ttf_fonts = "webfonts/*.ttf", "fonts/"
     """ % (
         repo_url,
         reftag,
@@ -140,6 +152,16 @@ def copy_meta():
     icons_dest = os.path.join(_thisdir, ICONS, os.path.basename(icons_src))
     with open(icons_dest, "w") as f:
         f.write(json.dumps(icons, indent=4))
+
+
+def copy_fonts():
+    fonts_src = os.path.join(download_temp, FONTS, "*")
+    fonts_dest = os.path.join(_thisdir, FONTS)
+    os.makedirs(fonts_dest, exist_ok=True)
+    for f in glob.iglob(fonts_src):
+        destf = os.path.join(fonts_dest, os.path.basename(f))
+        print("copy from", f, "to", destf)
+        shutil.copy2(f, destf)
 
 
 def build(reftag=None, opts=None, callb=None):
