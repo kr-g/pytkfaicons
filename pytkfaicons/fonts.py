@@ -37,13 +37,18 @@ def get_font_icon(
     if image_size is None:
         image_size = (height, height)
 
+    return create_font_icon(unicode_text, font_ic, image_size, bg=bg, fg=fg)
+
+
+def create_font_icon(unicode_text, font, image_size, bg="white", fg="black"):
+
     imag = Image.new(mode="RGB", size=image_size, color=bg)
     draw = ImageDraw.Draw(im=imag)
 
     sx = int(image_size[0] / 2)
     sy = int(image_size[1] / 2)
 
-    draw.text(xy=(sx, sy), text=unicode_text, font=font_ic, fill=fg, anchor="mm")
+    draw.text(xy=(sx, sy), text=unicode_text, font=font, fill=fg, anchor="mm")
 
     im = ImageTk.PhotoImage(imag)
 
