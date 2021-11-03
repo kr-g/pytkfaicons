@@ -1,5 +1,5 @@
 import tkinter as tk
-from PIL import Image, ImageDraw
+from PIL import Image, ImageTk, ImageDraw
 
 
 if False:
@@ -18,7 +18,7 @@ if False:
 from pytkfaicons.conv import get_meta, get_scaled_tk_icon, get_colored_scaled_tk_icon
 from pytkfaicons.icons import get_icon, get_icon_image, tk_image_loader, get_tk_icon
 
-from pytkfaicons.fonts import get_font
+from pytkfaicons.fonts import get_font, get_font_icon
 
 
 root = tk.Tk()
@@ -82,15 +82,57 @@ tk.Button(frame2, justify=tk.LEFT, padx=10, image=bars).pack(side="left")
 
 frame2.pack()
 
+# use fonts
 
-f_brands = get_font("brands", 14)
+f_brands = get_font("brands", 44)
 print(f_brands.getname())
-f_solid = get_font("solid", 14)
+f_solid = get_font("solid", 44)
 print(f_solid.getname())
-f_regular = get_font("regular", 14)
+f_regular = get_font("regular", 44)
 print(f_regular.getname())
 
-baby = get_meta("baby")
-print(type(baby), baby["unicode"], baby)
+# custom image - thats how get_font_icon() is implemented
 
+meta_ic = get_meta("asterisk")
+
+unicode_ic = meta_ic["unicode"]  # this is a hex string
+style_ic = meta_ic["styles"]  # list of supported fonts
+
+print("icon-data", unicode_ic, style_ic)
+print("icon-meta", meta_ic)
+
+# convert hex string to unicode
+unicode_text = chr(int(unicode_ic, 16))
+
+# load the first supported font
+font_ic = get_font(style_ic[0], 44)
+
+# background color == green
+imag = Image.new(mode="RGB", size=(66, 66), color="black")
+draw = ImageDraw.Draw(im=imag)
+
+# draw text with color == white
+draw.text(xy=(33, 33), text=unicode_text, font=font_ic, fill="white", anchor="mm")
+
+im = ImageTk.PhotoImage(imag)
+
+# end-of custom image
+
+frame3 = tk.Frame(root)
+
+tk.Label(frame3, text="font based").pack(side="left")
+
+# use the custom image
+tk.Button(frame3, justify=tk.LEFT, padx=10, image=im).pack(side="left")
+
+im_python = get_font_icon("python", height=100, bg="green", fg="white")
+tk.Button(frame3, justify=tk.LEFT, padx=10, image=im_python).pack(side="left")
+
+im_baby = get_font_icon("baby", height=44, bg="blue", fg="white")
+tk.Button(frame3, justify=tk.LEFT, padx=10, image=im_baby).pack(side="left")
+
+frame3.pack()
+
+
+# run tkinter mainloop
 root.mainloop()
