@@ -2,7 +2,7 @@
 
 # pytkfaicons
 
-fontawesome svg icons converted to png 
+fontawesome icons support for tkinter
 
 includes:
 - pre-calculated 32px height icons (fast)
@@ -19,7 +19,9 @@ and also
 for known issues, limitations and backlog refer to 
 [`BACKLOG`](https://github.com/kr-g/pytkfaicons/blob/main/BACKLOG.md)
 
+# sample screenshot
 
+<img src="Bildschirmfoto_2021-11-03_05-48-39.png" />
 
 # platform
 
