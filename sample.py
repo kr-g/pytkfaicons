@@ -23,6 +23,15 @@ from pytkfaicons.fonts import get_font, get_font_icon
 
 root = tk.Tk()
 
+frame_t = tk.Frame(root)
+
+tk.Label(frame_t, text="svg based - different size and color support").pack(
+    side="left", pady=20
+)
+
+frame_t.pack()
+
+
 frame1 = tk.Frame(root)
 tk.Label(frame1, text="on the fly resized (slow)").pack(side="left")
 
@@ -82,6 +91,18 @@ tk.Button(frame2, justify=tk.LEFT, padx=10, image=bars).pack(side="left")
 
 frame2.pack()
 
+# info text
+
+frame_m = tk.Frame(root)
+
+tk.Label(frame_m, text="font based - different size and color support").pack(
+    side="left", pady=20
+)
+
+frame_m.pack()
+
+#
+
 # use fonts
 
 f_brands = get_font("brands", 44)
@@ -117,6 +138,7 @@ draw.text(xy=(33, 33), text=unicode_text, font=font_ic, fill="white", anchor="mm
 im = ImageTk.PhotoImage(imag)
 
 # end-of custom image
+
 
 frame3 = tk.Frame(root)
 
