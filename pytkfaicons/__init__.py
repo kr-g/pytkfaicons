@@ -11,7 +11,7 @@ S_SOLID = "solid"
 FORMAT = "png"
 HEIGHT = 32
 
-VERSION = "v0.0.3"
+VERSION = "v0.0.4-a"
 
 _icons = None
 
