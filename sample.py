@@ -137,5 +137,48 @@ tk.Button(frame3, justify=tk.LEFT, padx=10, image=im_bahai).pack(side="left")
 frame3.pack()
 
 
+frame4 = tk.Frame(root)
+
+tk.Label(frame4, text="font styles").pack(side="left")
+
+im_quest = get_font_icon(
+    "question-circle",
+    style="regular",
+    height=22,
+    image_size=(50, 50),
+    bg="black",
+    fg="white",
+)
+tk.Button(frame4, justify=tk.LEFT, padx=10, image=im_quest).pack(side="left")
+
+im_quest2 = get_font_icon(
+    "question-circle",
+    style="solid",
+    height=22,
+    image_size=(50, 50),
+    bg="black",
+    fg="white",
+)
+tk.Button(frame4, justify=tk.LEFT, padx=10, image=im_quest2).pack(side="left")
+
+im_quest3 = get_font_icon(
+    "question-circle",
+    style="regular",
+    height=22,
+    image_size=(50, 50),
+)
+tk.Button(frame4, justify=tk.LEFT, padx=10, image=im_quest3).pack(side="left")
+
+im_quest4 = get_font_icon(
+    "question-circle",
+    style="solid",
+    height=22,
+    image_size=(50, 50),
+)
+tk.Button(frame4, justify=tk.LEFT, padx=10, image=im_quest4).pack(side="left")
+
+frame4.pack()
+
+
 # run tkinter mainloop
 root.mainloop()
