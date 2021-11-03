@@ -201,6 +201,44 @@ tk.Button(frame4, justify=tk.LEFT, padx=10, image=im_quest4).pack(side="left")
 
 frame4.pack()
 
+frame5 = tk.Frame(root)
+
+tk.Label(frame5, text="coding icons").pack(side="left", pady=20)
+
+frame5.pack()
+
+frame6 = tk.Frame(root)
+
+im_code = get_font_icon(
+    "code",
+    height=22,
+    image_size=(33, 33),
+)
+tk.Button(frame6, justify=tk.LEFT, padx=10, image=im_code).pack(side="left")
+
+im_code2 = get_font_icon(
+    "bug",
+    height=22,
+    image_size=(33, 33),
+)
+tk.Button(frame6, justify=tk.LEFT, padx=10, image=im_code2).pack(side="left")
+
+im_code_branch = get_font_icon(
+    "code-branch",
+    height=22,
+    image_size=(33, 33),
+)
+tk.Button(frame6, justify=tk.LEFT, padx=10, image=im_code_branch).pack(side="left")
+
+im_code_cmp = get_font_icon(
+    "cube",
+    height=22,
+    image_size=(33, 33),
+)
+tk.Button(frame6, justify=tk.LEFT, padx=10, image=im_code_cmp).pack(side="left")
+
+frame6.pack()
+
 
 # run tkinter mainloop
 root.mainloop()
