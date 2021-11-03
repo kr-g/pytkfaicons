@@ -131,6 +131,9 @@ tk.Button(frame3, justify=tk.LEFT, padx=10, image=im_python).pack(side="left")
 im_baby = get_font_icon("baby", height=44, bg="blue", fg="white")
 tk.Button(frame3, justify=tk.LEFT, padx=10, image=im_baby).pack(side="left")
 
+im_bahai = get_font_icon("bahai", height=44, image_size=(100, 70), bg="red", fg="white")
+tk.Button(frame3, justify=tk.LEFT, padx=10, image=im_bahai).pack(side="left")
+
 frame3.pack()
 
 
