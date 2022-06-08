@@ -32,7 +32,7 @@ version = find_version(file)
 setuptools.setup(
     name=projectname,
     version=version,
-    author="k.r. goger",
+    author="k. goger",
     author_email=f"k.r.goger+{projectname}@gmail.com",
     license=f"https://github.com/kr-g/{projectname}/blob/main/LICENSE",
     description="tkinter fontawesome icons",

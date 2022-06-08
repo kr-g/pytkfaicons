@@ -1,8 +1,5 @@
 
-Copyright (c) 2021 k.r. goger
-email: k.r.goger@gmail.com
-
-project homepage:
+Copyright (c) 2021 k. goger - https://github.com/kr-g
 https://github.com/kr-g/pytkfaicons
 
 
@@ -14,4 +11,6 @@ refer to https://fontawesome.com/license/free
 pytkfaicons : 
 GNU AFFERO GENERAL PUBLIC LICENSE version 3 and later
 https://www.gnu.org/licenses/agpl-3.0.en.html
+
+
 
