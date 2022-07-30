@@ -176,6 +176,20 @@ im_code_cmp = get_font_icon(
 )
 tk.Button(frame6, justify=tk.LEFT, padx=10, image=im_code_cmp).pack(side="left")
 
+im_git_alt = get_font_icon(
+    "git-alt",
+    height=22,
+    image_size=(33, 33),
+)
+tk.Button(frame6, justify=tk.LEFT, padx=10, image=im_git_alt).pack(side="left")
+
+im_git_hub = get_font_icon(
+    "github",
+    height=22,
+    image_size=(33, 33),
+)
+tk.Button(frame6, justify=tk.LEFT, padx=10, image=im_git_hub).pack(side="left")
+
 frame6.pack()
 
 
