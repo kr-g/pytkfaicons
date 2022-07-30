@@ -1,23 +1,13 @@
 import os
 import shutil
 import json
-import tempfile
 import glob
-from multiprocessing import Pool
-
-import tkinter as tk
 
 from . import (
     _thisdir,
-    get_meta,
-    get_icons,
     META,
     FONTS,
     ICONS,
-    S_BRANDS,
-    S_REGULAR,
-    S_SOLID,
-    FORMAT,
     HEIGHT,
 )
 
