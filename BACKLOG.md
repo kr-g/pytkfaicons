@@ -7,10 +7,10 @@
 
 # backlog
 
-- ~~rework design, font as main basis 
-  - set to deprecated
-    - image from svg generation
-    - remove wand dependency~~
+- ~~rework design, font as main basis ~~
+  - ~~set to deprecated~~
+    - ~~image from svg generation~~
+    - ~~remove wand dependency~~
 - ~~add install Pillow with pip to setup.py/setuptools ~~
 - ~~font support for https://github.com/FortAwesome/Font-Awesome/tree/master/otfs~~
   - for integration refer to:
