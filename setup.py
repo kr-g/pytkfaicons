@@ -25,7 +25,7 @@ def find_projectname():
 
 
 projectname = find_projectname()
-file = os.path.join(projectname, "__init__.py")
+file = os.path.join(projectname, "const.py")
 version = find_version(file)
 
 
@@ -34,25 +34,11 @@ setuptools.setup(
     version=version,
     author="k. goger",
     author_email=f"k.r.goger+{projectname}@gmail.com",
-    license=f"https://github.com/kr-g/{projectname}/blob/main/LICENSE",
-    description="tkinter fontawesome icons",
-    long_description=long_description,
-    long_description_content_type="text/markdown",
     url=f"https://github.com/kr-g/{projectname}",
     packages=setuptools.find_packages(exclude=[]),
     include_package_data=True,
-    keywords="tkinter fontawesome icons",
     install_requires=[
         "Pillow",
-        "pygitgrab",
     ],
-    classifiers=[
-        "Development Status :: 3 - Alpha",
-        "Operating System :: POSIX :: Linux",
-        "Operating System :: OS Independent",
-        "Environment :: Console",
-        "Intended Audience :: Developers",
-        "Programming Language :: Python :: 3",
-    ],
-    python_requires=">=3.8",
+    python_requires=">=3.9",
 )
