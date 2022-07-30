@@ -1,8 +1,9 @@
 import os
 import json
 
-ICONS = "icons"
+META = "meta"
 FONTS = "fonts"
+ICONS = "icons.json"
 
 S_BRANDS = "brands"
 S_REGULAR = "regular"
@@ -12,6 +13,7 @@ FORMAT = "png"
 HEIGHT = 32
 
 VERSION = "v0.0.4-a"
+REFTAG = None
 
 _icons = None
 
@@ -27,7 +29,7 @@ def get_icons():
 
 
 def read_icons():
-    icons_src = os.path.join(_thisdir, ICONS, "icons.json")
+    icons_src = os.path.join(_thisdir, FONTS, ICONS)
     with open(icons_src) as f:
         global _icons
         _icons = json.loads(f.read())

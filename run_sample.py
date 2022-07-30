@@ -1,22 +1,7 @@
 import tkinter as tk
 from PIL import Image, ImageTk, ImageDraw
 
-
-if False:
-    # set to True to build all icons
-
-    from pytkfaicons.conv import build, get_repo, convert_all, copy_meta, copy_fonts
-
-    # build(opts="-c", callb=print) # use custom credit file
-    # build(callb=print)  # use global .pygg_credits file
-
-    # convert_all()
-    # copy_meta()
-    # copy_fonts()
-
-
-from pytkfaicons.conv import get_meta, get_scaled_tk_icon, get_colored_scaled_tk_icon
-from pytkfaicons.icons import get_icon, get_icon_image, tk_image_loader, get_tk_icon
+from pytkfaicons.conv import get_meta
 
 from pytkfaicons.fonts import get_font, get_font_icon
 
@@ -24,73 +9,6 @@ from pytkfaicons.fonts import get_font, get_font_icon
 root = tk.Tk()
 
 frame_t = tk.Frame(root)
-
-tk.Label(frame_t, text="svg based - different size and color support").pack(
-    side="left", pady=20
-)
-
-frame_t.pack()
-
-
-frame1 = tk.Frame(root)
-tk.Label(frame1, text="on the fly resized (slow)").pack(side="left")
-
-# resize on the fly (slow)
-img0 = get_colored_scaled_tk_icon("arrow-left", "solid", 64, "green")
-tk.Button(frame1, justify=tk.LEFT, padx=10, image=img0).pack(side="left")
-
-img1 = get_colored_scaled_tk_icon("arrow-right", "solid", 48, "green", invert=True)
-tk.Button(frame1, justify=tk.LEFT, padx=10, image=img1).pack(side="left")
-
-img2 = get_colored_scaled_tk_icon("asterisk", "solid", 32, "blue", invert=True)
-tk.Button(frame1, justify=tk.LEFT, padx=10, image=img2).pack(side="left")
-
-img3 = get_colored_scaled_tk_icon("barcode", "solid", 24, "blue")
-tk.Button(frame1, justify=tk.LEFT, padx=10, image=img3).pack(side="left")
-
-img4 = get_scaled_tk_icon("baby", "solid", 12)
-tk.Button(frame1, justify=tk.LEFT, padx=10, image=img4).pack(side="left")
-
-img5 = get_scaled_tk_icon("bahai", "solid", 8)
-tk.Button(frame1, justify=tk.LEFT, padx=10, image=img5).pack(side="left")
-
-img6 = get_scaled_tk_icon("bars", "solid", 6)
-tk.Button(frame1, justify=tk.LEFT, padx=10, image=img6).pack(side="left")
-
-frame1.pack()
-
-# this is the same implementation as get_tk_icon()
-# using get_icon_image(), and tk_image_loader() as loader
-# what returns tk.PhotoImage
-
-
-def icon(name, style):
-    # pre-calculated 32px height icons (fast)
-    return get_icon_image(name, style, loader=tk_image_loader)
-
-
-frame2 = tk.Frame(root)
-
-left = icon("arrow-left", "solid")
-right = icon("arrow-right", "solid")
-asterisk = icon("asterisk", "solid")
-barcode = icon("barcode", "solid")
-baby = icon("baby", "solid")
-bahai = icon("bahai", "solid")
-bars = icon("bars", "solid")
-
-tk.Label(frame2, text="pre-caclulated (fast)").pack(side="left")
-
-tk.Button(frame2, justify=tk.LEFT, padx=10, image=left).pack(side="left")
-tk.Button(frame2, justify=tk.LEFT, padx=10, image=right).pack(side="left")
-tk.Button(frame2, justify=tk.LEFT, padx=10, image=asterisk).pack(side="left")
-tk.Button(frame2, justify=tk.LEFT, padx=10, image=barcode).pack(side="left")
-tk.Button(frame2, justify=tk.LEFT, padx=10, image=baby).pack(side="left")
-tk.Button(frame2, justify=tk.LEFT, padx=10, image=bahai).pack(side="left")
-tk.Button(frame2, justify=tk.LEFT, padx=10, image=bars).pack(side="left")
-
-frame2.pack()
-
 # info text
 
 frame_m = tk.Frame(root)
@@ -100,8 +18,6 @@ tk.Label(frame_m, text="font based - different size and color support").pack(
 )
 
 frame_m.pack()
-
-#
 
 # use fonts
 
@@ -139,10 +55,33 @@ im = ImageTk.PhotoImage(imag)
 
 # end-of custom image
 
+frame2 = tk.Frame(root)
+
+img0 = get_font_icon("arrow-left", style="solid", height=64, fg="green")
+tk.Button(frame2, justify=tk.LEFT, padx=10, image=img0).pack(side="left")
+
+img1 = get_font_icon("arrow-right", style="solid", height=48, fg="green", bg="black")
+tk.Button(frame2, justify=tk.LEFT, padx=10, image=img1).pack(side="left")
+
+img2 = get_font_icon("asterisk", style="solid", height=32, fg="blue", bg="black")
+tk.Button(frame2, justify=tk.LEFT, padx=10, image=img2).pack(side="left")
+
+img3 = get_font_icon("barcode", style="solid", height=24, fg="blue")
+tk.Button(frame2, justify=tk.LEFT, padx=10, image=img3).pack(side="left")
+
+img4 = get_font_icon("baby", style="solid", height=12)
+tk.Button(frame2, justify=tk.LEFT, padx=10, image=img4).pack(side="left")
+
+img5 = get_font_icon("bahai", style="solid", height=8)
+tk.Button(frame2, justify=tk.LEFT, padx=10, image=img5).pack(side="left")
+
+img6 = get_font_icon("bars", style="solid", height=6)
+tk.Button(frame2, justify=tk.LEFT, padx=10, image=img6).pack(side="left")
+
+frame2.pack()
 
 frame3 = tk.Frame(root)
 
-tk.Label(frame3, text="font based").pack(side="left")
 
 # use the custom image
 tk.Button(frame3, justify=tk.LEFT, padx=10, image=im).pack(side="left")

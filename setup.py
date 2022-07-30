@@ -45,7 +45,6 @@ setuptools.setup(
     install_requires=[
         "Pillow",
         "pygitgrab",
-        "wand",
     ],
     classifiers=[
         "Development Status :: 3 - Alpha",

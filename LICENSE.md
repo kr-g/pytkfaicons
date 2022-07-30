@@ -1,5 +1,5 @@
 
-Copyright (c) 2021 k. goger - https://github.com/kr-g
+(c) 2021, 2022 k. goger - https://github.com/kr-g
 https://github.com/kr-g/pytkfaicons
 
 

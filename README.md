@@ -21,7 +21,7 @@ for known issues, limitations and backlog refer to
 
 # sample screenshot
 
-<img src="Bildschirmfoto_2021-11-03_05-48-39.png" />
+<img src="screenshot.png" />
 
 # platform
 
