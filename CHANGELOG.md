@@ -5,6 +5,12 @@ for known issues and backlog refer to
 [`BACKLOG`](https://github.com/kr-g/pytkfaicons/blob/main/BACKLOG.md)
 
 
+## version v0.0.7 - 20220729
+
+- bug fix, dur to corrupted local env
+- 
+
+
 ## version v0.0.6 - 20220729
 
 - bug fix, dur to corrupted local env
