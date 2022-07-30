@@ -5,7 +5,12 @@ for known issues and backlog refer to
 [`BACKLOG`](https://github.com/kr-g/pytkfaicons/blob/main/BACKLOG.md)
 
 
-## next version v0.0.4 - ???
+## next version v0.0.5 - ???
+
+- 
+
+
+## version v0.0.4 - 20220729
 
 - droped drepracted image from svg generation
   - only font images are supported from now 
