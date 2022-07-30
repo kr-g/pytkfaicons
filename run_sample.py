@@ -2,7 +2,7 @@ import tkinter as tk
 from PIL import Image, ImageTk, ImageDraw
 
 from pytkfaicons import REFTAG
-from pytkfaicons.conv import get_meta
+from pytkfaicons import get_meta
 from pytkfaicons.fonts import get_font, get_font_icon
 
 
