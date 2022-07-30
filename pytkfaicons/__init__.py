@@ -1,6 +1,8 @@
 import os
 import json
 
+from .const import *
+
 META = "meta"
 FONTS = "fonts"
 ICONS = "icons.json"
@@ -11,9 +13,6 @@ S_SOLID = "solid"
 
 FORMAT = "png"
 HEIGHT = 32
-
-VERSION = "v0.0.4-a"
-REFTAG = None
 
 _icons = None
 

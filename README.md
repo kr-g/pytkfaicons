@@ -1,14 +1,11 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-# pytkfaicons
+# pytkfaicons 
 
-fontawesome icons support for tkinter
+fontawesome font based icons support for tkinter
 
-includes:
-- pre-calculated 32px height icons (fast)
-- method for creating scalable icons from svg source (slow) - new in version v0.0.2
-- method for using ttf font based icons - new in version v0.0.3
-- 
+uses font-awesome version==6.1.2
+
 
 # what's new ?
 

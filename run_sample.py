@@ -1,8 +1,8 @@
 import tkinter as tk
 from PIL import Image, ImageTk, ImageDraw
 
+from pytkfaicons import REFTAG
 from pytkfaicons.conv import get_meta
-
 from pytkfaicons.fonts import get_font, get_font_icon
 
 
@@ -13,8 +13,10 @@ frame_t = tk.Frame(root)
 
 frame_m = tk.Frame(root)
 
+tk.Label(frame_m, text=f"fontawesome - {REFTAG}").pack(side="top", pady=10)
+
 tk.Label(frame_m, text="font based - different size and color support").pack(
-    side="left", pady=20
+    side="top", pady=10
 )
 
 frame_m.pack()
@@ -102,8 +104,10 @@ frame4 = tk.Frame(root)
 
 tk.Label(frame4, text="font styles").pack(side="left")
 
+QUEST = "circle-question"
+
 im_quest = get_font_icon(
-    "question-circle",
+    QUEST,
     style="regular",
     height=22,
     image_size=(50, 50),
@@ -113,7 +117,7 @@ im_quest = get_font_icon(
 tk.Button(frame4, justify=tk.LEFT, padx=10, image=im_quest).pack(side="left")
 
 im_quest2 = get_font_icon(
-    "question-circle",
+    QUEST,
     style="solid",
     height=22,
     image_size=(50, 50),
@@ -123,7 +127,7 @@ im_quest2 = get_font_icon(
 tk.Button(frame4, justify=tk.LEFT, padx=10, image=im_quest2).pack(side="left")
 
 im_quest3 = get_font_icon(
-    "question-circle",
+    QUEST,
     style="regular",
     height=22,
     image_size=(50, 50),
@@ -131,7 +135,7 @@ im_quest3 = get_font_icon(
 tk.Button(frame4, justify=tk.LEFT, padx=10, image=im_quest3).pack(side="left")
 
 im_quest4 = get_font_icon(
-    "question-circle",
+    QUEST,
     style="solid",
     height=22,
     image_size=(50, 50),
