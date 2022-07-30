@@ -1,4 +1,7 @@
 from pytkfaicons import REFTAG
 from pytkfaicons.conv import build
 
-build(reftag=REFTAG, callb=print)  # this uses global .pygg_credits file
+reftag=REFTAG
+reftag = "6.12"
+
+build(reftag=reftag, callb=print)  # this uses global .pygg_credits file

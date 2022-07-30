@@ -38,12 +38,11 @@ in case your code breaks between two versions check
 information first before creating a ticket / issue on github. thanks.
 
 
-# note on self-build a local package or scalable icons
+# note on self-build a local package 
 
 - for downloading content from github with 
 [`pygitrab`](https://github.com/kr-g/pygitgrab) 
 a credits file is required.
-- imagemagick is required to convert with [`wand`](https://github.com/emcconville/wand)
 
 
 # installation
@@ -53,7 +52,11 @@ a credits file is required.
 
 # license
 
-refer to https://github.com/kr-g/pytkfaicons/blob/main/LICENSE
+refer to https://github.com/kr-g/pytkfaicons/blob/main/LICENSE.md
+
+and
+
+[Font-Awesome](https://github.com/FortAwesome/Font-Awesome/tree/master)
 
 
 
