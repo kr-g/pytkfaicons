@@ -7,7 +7,7 @@
 
 # backlog
 
-- ~~rework design, font as main basis ~~
+- ~~rework design, font as main basis~~
   - ~~set to deprecated~~
     - ~~image from svg generation~~
     - ~~remove wand dependency~~
