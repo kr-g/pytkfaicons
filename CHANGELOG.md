@@ -5,8 +5,9 @@ for known issues and backlog refer to
 [`BACKLOG`](https://github.com/kr-g/pytkfaicons/blob/main/BACKLOG.md)
 
 
-## next version v0.0.5 - ???
+## version v0.0.5 - 20220729
 
+- bump python version >= 3.8
 - 
 
 

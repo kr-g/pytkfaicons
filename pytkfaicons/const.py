@@ -1,2 +1,2 @@
-VERSION = "v0.0.5-a"
-REFTAG = None # "6.1.2"
+VERSION = "v0.0.5"
+REFTAG = "6.1.2"
