@@ -47,8 +47,8 @@ def create_font_icon(unicode_text, font, image_size, bg="white", fg="black"):
 
     height_2 = font.size / 2
 
-    sx = int(image_size[0] / 2 )
-    sy = int(image_size[1] / 2 )
+    sx = int(image_size[0] / 2)
+    sy = int(image_size[1] / 2)
 
     draw.text(xy=(sx, sy), text=unicode_text, font=font, fill=fg, anchor="mm")
 

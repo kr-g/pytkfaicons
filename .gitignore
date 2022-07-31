@@ -10,6 +10,8 @@ share/
 **/*.pyc
 *.egg-info
 
+.venv/
+
 downloads/*
 pytkfaicons/downloads/*
 pytkfaicons/icons/*
