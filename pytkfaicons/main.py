@@ -1,6 +1,6 @@
 import sys
 
-from .conv import build
+from pytkfaicons.conv import build
 
 
 def main_func():

@@ -3,7 +3,7 @@ import shutil
 import json
 import glob
 
-from . import (
+from pytkfaicons import (
     _thisdir,
     META,
     FONTS,
@@ -131,6 +131,9 @@ def build(reftag=None, opts=None, callb=None):
     with open(fonts_dest, "w") as f:
         f.write(lic)
 
+    init_dest =os.path.join(_thisdir, FONTS, "__init__.py")
+    with open(init_dest,"w") as f:
+        f.write("# automatic created")
 
 # svg direct support
 

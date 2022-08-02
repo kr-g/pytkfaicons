@@ -1,7 +1,7 @@
 import os
 import json
 
-from .const import *
+from pytkfaicons.const import *
 
 META = "meta"
 FONTS = "fonts"

@@ -2,7 +2,7 @@ import os
 
 from PIL import Image, ImageTk, ImageDraw, ImageFont
 
-from . import _thisdir, get_meta, FONTS, S_BRANDS, S_REGULAR, S_SOLID, HEIGHT
+from pytkfaicons import _thisdir, get_meta, FONTS, S_BRANDS, S_REGULAR, S_SOLID, HEIGHT
 
 ttf_fonts = {
     S_BRANDS: "fa-brands-400.ttf",
