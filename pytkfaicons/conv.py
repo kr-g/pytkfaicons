@@ -24,21 +24,16 @@ repo_url = "https://github.com/FortAwesome/Font-Awesome"
 
 def mk_temp_pygg(reftag):
 
-    pygg = """
+    pygg = f"""
         [fontawesome_github]
         url="%s"
 
         tag = %s
 
-        #brands= "svgs/brands/*.svg", "brands"
-        #regular= "svgs/regular/*.svg", "regular"
-        #solid= "svgs/solid/*.svg", "solid"
-
-        meta = "metadata/icons.json", "meta/icons.json"
-        #otf_fonts = "otfs/*.otf", "fonts/"
-        ttf_fonts = "webfonts/*.ttf", "fonts/"
+        meta = "metadata/icons.json", "{META}/icons.json"
+        ttf_fonts = "webfonts/*.ttf", "{FONTS}/"
         
-        license = LICENSE.txt, "meta/LICENSE-font-awesome.txt"
+        license = LICENSE.txt, "{META}/LICENSE-font-awesome.txt"
     """ % (
         repo_url,
         reftag,
@@ -131,9 +126,10 @@ def build(reftag=None, opts=None, callb=None):
     with open(fonts_dest, "w") as f:
         f.write(lic)
 
-    init_dest =os.path.join(_thisdir, FONTS, "__init__.py")
-    with open(init_dest,"w") as f:
+    init_dest = os.path.join(_thisdir, FONTS, "__init__.py")
+    with open(init_dest, "w") as f:
         f.write("# automatic created")
+
 
 # svg direct support
 

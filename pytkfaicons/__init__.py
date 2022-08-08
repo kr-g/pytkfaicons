@@ -4,7 +4,7 @@ import json
 from pytkfaicons.const import *
 
 META = "meta"
-FONTS = "fonts"
+FONTS = "fonts-dir"
 ICONS = "icons.json"
 
 S_BRANDS = "brands"
