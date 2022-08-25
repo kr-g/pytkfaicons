@@ -47,6 +47,13 @@ a credits file is required.
       python3 -m pip install pytkfaicons
 
 
+## installation on raspberry pi
+
+here it might be required (in some cases) to install imagetk in addtion
+
+    sudo apt-get install python3-pil python3-pil.imagetk
+
+
 # license
 
 refer to https://github.com/kr-g/pytkfaicons/blob/main/LICENSE.md
