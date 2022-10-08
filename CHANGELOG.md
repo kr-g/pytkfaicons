@@ -5,10 +5,13 @@ for known issues and backlog refer to
 [`BACKLOG`](https://github.com/kr-g/pytkfaicons/blob/main/BACKLOG.md)
 
 
+check also [fa-changelog](https://fontawesome.com/docs/changelog/)
+
+
 ## next version v0.0.8 - ???
 
 - changed folder structure
--
+- fa v6.2.0
 
 
 ## version v0.0.7 - 20220729

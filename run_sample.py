@@ -104,7 +104,7 @@ frame4 = tk.Frame(root)
 
 tk.Label(frame4, text="font styles").pack(side="left")
 
-QUEST = "circle-question"
+QUEST = "question-circle"
 
 im_quest = get_font_icon(
     QUEST,
