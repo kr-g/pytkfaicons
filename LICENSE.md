@@ -1,5 +1,5 @@
 
-(c) 2021, 2022 k. goger - https://github.com/kr-g
+(c) 2021, 2022, 2023 k. goger - https://github.com/kr-g
 https://github.com/kr-g/pytkfaicons
 
 
