@@ -4,7 +4,9 @@
 
 fontawesome font based icons support for tkinter
 
-uses font-awesome version==6.1.2
+uses font-awesome version==6.2.1
+
+NOTE: this version is used on the rolling baseline, refer to the corresponding tagged README
 
 
 # what's new ?

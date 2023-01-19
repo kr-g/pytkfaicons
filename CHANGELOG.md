@@ -11,7 +11,9 @@ check also [fa-changelog](https://fontawesome.com/docs/changelog/)
 ## next version v0.0.8 - ???
 
 - changed folder structure
-- fa v6.2.0
+- fa v6.2.1
+- icon alias name support
+- 
 
 
 ## version v0.0.7 - 20220729
