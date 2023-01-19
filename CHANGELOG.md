@@ -13,6 +13,7 @@ check also [fa-changelog](https://fontawesome.com/docs/changelog/)
 - changed folder structure
 - fa v6.2.1
 - icon alias name support
+- font caching
 - 
 
 
