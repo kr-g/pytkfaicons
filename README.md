@@ -13,11 +13,9 @@ NOTE: this version is used on the rolling baseline, refer to the corresponding t
 
 check
 [`CHANGELOG`](https://github.com/kr-g/pytkfaicons/blob/main/CHANGELOG.md)
-for latest ongoing, or upcoming news
-and also
-for known issues, limitations and for 
+for latest ongoing, or upcoming news 
 
-backlog refer to 
+for known issues, limitations and backlog refer to 
 [`BACKLOG`](https://github.com/kr-g/pytkfaicons/blob/main/BACKLOG.md)
 
 # sample screenshot
