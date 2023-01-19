@@ -15,7 +15,9 @@ check
 [`CHANGELOG`](https://github.com/kr-g/pytkfaicons/blob/main/CHANGELOG.md)
 for latest ongoing, or upcoming news
 and also
-for known issues, limitations and backlog refer to 
+for known issues, limitations and for 
+
+backlog refer to 
 [`BACKLOG`](https://github.com/kr-g/pytkfaicons/blob/main/BACKLOG.md)
 
 # sample screenshot
