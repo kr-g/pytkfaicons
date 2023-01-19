@@ -4,4 +4,4 @@ include README.md
 include CHANGELOG.md
 include BACKLOG.md
 
-recursive-include pytkfaicons/fonts *
+recursive-include pytkfaicons/fonts-dir *

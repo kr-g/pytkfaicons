@@ -32,7 +32,7 @@ def get_icons():
                     _icons_exploded[a] = v
             except:
                 pass
-                
+
     return _icons_exploded
 
 
@@ -42,6 +42,7 @@ def read_icons():
         global _icons, _icons_exploded
         _icons = json.loads(f.read())
         _icons_exploded = dict()
+
 
 def get_meta(name):
     icons = get_icons()
