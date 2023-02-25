@@ -8,6 +8,11 @@ for known issues and backlog refer to
 check also [fa-changelog](https://fontawesome.com/docs/changelog/)
 
 
+## next version v0.0.9 - ???
+
+-
+
+
 ## version v0.0.8 - 20230225
 
 - changed folder structure
