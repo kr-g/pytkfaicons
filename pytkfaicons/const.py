@@ -1,2 +1,2 @@
-VERSION = "v0.0.9"
+VERSION = "v0.0.10-rc0"
 REFTAG = "6.4.0"

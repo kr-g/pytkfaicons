@@ -8,7 +8,12 @@ for known issues and backlog refer to
 check also [fa-changelog](https://fontawesome.com/docs/changelog/)
 
 
-## next version v0.0.9 - 20230609
+## next version v0.0.10 - ???
+
+-
+
+
+## version v0.0.9 - 20230609
 
 - fa v6.4.0
 -
