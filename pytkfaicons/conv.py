@@ -23,7 +23,6 @@ repo_url = "https://github.com/FortAwesome/Font-Awesome"
 
 
 def mk_temp_pygg(reftag):
-
     pygg = f"""
         [fontawesome_github]
         url="%s"
@@ -71,14 +70,12 @@ def get_repo(reftag=None, opts=None, callb=None):
 
 
 def copy_meta():
-
     meta_dir = os.path.join(download_temp, META)
 
     icons_src = os.path.join(meta_dir, "icons.json")
     with open(icons_src) as f:
         icons = json.loads(f.read())
     for key, val in icons.items():
-
         for st in val["styles"]:
             val["svg_" + st] = val["svg"][st]["raw"]
 

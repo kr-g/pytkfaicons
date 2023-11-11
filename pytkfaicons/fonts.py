@@ -13,18 +13,19 @@ ttf_fonts = {
 
 _font_cache = {}
 
+
 def get_font(name, font_size):
     global _font_cache
     fid = (name, font_size)
-    
+
     if fid not in _font_cache:
         ttf_file = ttf_fonts[name]
         ttf_file = os.path.join(_thisdir, FONTS, ttf_file)
         assert os.path.exists(ttf_file)
         ttf = ImageFont.truetype(ttf_file, encoding="unic", size=font_size)
         _font_cache[fid] = ttf
-        
-    return _font_cache[fid] 
+
+    return _font_cache[fid]
 
 
 def get_font_icon(
@@ -50,7 +51,6 @@ def get_font_icon(
 
 
 def create_font_icon(unicode_text, font, image_size, bg="white", fg="black"):
-
     imag = Image.new(mode="RGB", size=image_size, color=bg)
     draw = ImageDraw.Draw(im=imag)
 
