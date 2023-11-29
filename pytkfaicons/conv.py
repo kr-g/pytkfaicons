@@ -29,8 +29,8 @@ def mk_temp_pygg(reftag):
 
         tag = %s
 
-        meta = "metadata/icons.json", "{META}/icons.json"
-        ttf_fonts = "webfonts/*.ttf", "{FONTS}/"
+        meta = "free/metadata/icons.json", "{META}/icons.json"
+        ttf_fonts = "free/webfonts/*.ttf", "{FONTS}/"
         
         license = LICENSE.txt, "{META}/LICENSE-font-awesome.txt"
     """ % (

@@ -8,9 +8,10 @@ for known issues and backlog refer to
 check also [fa-changelog](https://fontawesome.com/docs/changelog/)
 
 
-## next version v0.0.11 - ???
+## version v0.0.11 - 20231129
 
--
+- changed font awesome repo path to "free"
+- LAST VERSION OF `pytkfaicons`. the project is now retired.
 
 
 ## version v0.0.10 - 20231111

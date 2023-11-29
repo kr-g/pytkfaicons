@@ -1,10 +1,16 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
+
+**IMPORTANT**
+
+the project is now retired. this is the **last** version of `pytkfaicons`.
+
+
 # pytkfaicons 
 
 fontawesome font based icons support for tkinter
 
-uses font-awesome version==6.4.2
+uses font-awesome version==6.5.0
 
 NOTE: this version is used on the rolling baseline, refer to the corresponding tagged README
 
